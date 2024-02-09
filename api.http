@@ -1,0 +1,40 @@
+###
+GET http://localhost:3000/users/5651752b-ab75-46d0-81ee-cc09fde4f07d
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Filipe da Silva Almeida",
+    "email": "filipesilva@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/users/a02d0b41-fb9e-4f18-90a3-790dc36bcedf
+
+###
+PATCH  http://localhost:3000/users/99dffbda-cd49-4446-8c0b-f961b35e3168
+Content-Type: application/json
+
+{
+    "name": "Filipe da Silva Almeida",
+    "email": "filipesilva@gmail.com"
+}
+
+Tasks
+
+###
+GET http://localhost:3000/tasks
+
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "task_title": "Fazer CI/CD",
+  "description": "Configurar deploy automático",
+  "conclusion_date": "2024-02-07T08:00:00.000Z",
+  "priority": "high",
+  "userId": "5651752b-ab75-46d0-81ee-cc09fde4f07d"
+}
